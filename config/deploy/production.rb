@@ -9,6 +9,8 @@
 
 server CAP_CONFIG['production']['server'], user: CAP_CONFIG['production']['user'], roles: %w{app db web}
 
+set :branch, CAP_CONFIG['production']['branch']
+
 set :deploy_to, CAP_CONFIG['production']['deploy_to']
 
 # role-based syntax
